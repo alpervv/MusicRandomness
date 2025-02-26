@@ -46,7 +46,7 @@ def main(output_file):
 
             # Adjust starting timestamp for the next chunk
             last_timestamp = candles[0][0]
-            start_time = last_timestamp - limit*60000
+            start_time = last_timestamp - limit*60000 # Adjust if interval isn't in minutes
             
 
             print(f"Fetched {(i+1)*limit} candles so far...")
